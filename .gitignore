@@ -1,9 +1,36 @@
+# Virtual environments
 .venv/
+.venv*/
+venv/
+env/
+
+# Python cache/build artifacts
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Runtime-generated lab data
 data/logs.jsonl
 data/audit.jsonl
-.env
-.pytest_cache/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Codex/local tool cache
 .antigravity/
